@@ -1,5 +1,6 @@
 import React from 'react'
 import "./TaskForm.css"
+import Tag from './Tag'
 
 const TaskForm = () => {
   return (
@@ -9,10 +10,11 @@ const TaskForm = () => {
 
         <div className='task_form_bottom_line'>
           <div>
-          <button className='tag'>HTML</button>
-          <button className='tag'>CSS</button>
-          <button className='tag'>JAVASCRIPT</button>
-          <button className='tag'>REACT</button>
+          <Tag/>
+          <Tag/>
+          <Tag/>
+          <Tag/>
+          
           </div>
           <div>
           <select className="task_status" >
