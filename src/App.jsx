@@ -12,9 +12,9 @@ const App = () => {
       <main className='app_main'>
         <TaskColumn title="To do" icon={ target}
         />
-        <TaskColumn title="Doing " icon={ checkmark}
+        <TaskColumn title="Doing " icon={ risingstar}
       />
-        <TaskColumn title="Do" icon ={ risingstar}
+        <TaskColumn title="Done" icon ={ checkmark}
         />
         
       </main>
