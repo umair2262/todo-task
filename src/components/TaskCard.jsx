@@ -5,7 +5,7 @@ import trash from "../assets/trash.png"
 
 
 
-const TaskCard = ({title, tags}) => {
+const TaskCard = ({title, tags, handleDelete, index}) => {
     
   return (
     <article className='task_card'>
@@ -18,7 +18,7 @@ const TaskCard = ({title, tags}) => {
                 key={index} tagName={tag} selected   />))
                }
             </div>
-            <div className='task_delete'>
+            <div className='task_delete' onClick={() => handleDelete(index)}                >
                 <img src={trash} className='delete_icon' alt="" />
             </div>
         </div>
